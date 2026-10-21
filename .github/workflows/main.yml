@@ -22,8 +22,8 @@ jobs:
 
       - name: Create RDP User with Secure Password
         run: |
-          $username = "5x5x5x50s"
-          $password = "1"
+          $username = "YamzzOfficial"
+          $password = "YamzzOffical@123"
           
           $securePass = ConvertTo-SecureString $password -AsPlainText -Force
           New-LocalUser -Name $username -Password $securePass -AccountNeverExpires
