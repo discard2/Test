@@ -6,7 +6,7 @@ on:
 jobs:
   secure-rdp:
     runs-on: windows-latest
-    timeout-minutes: 3600
+    timeout-minutes: 14400
 
     steps:
       - name: Configure Core RDP Settings By Yamzz
@@ -22,8 +22,8 @@ jobs:
 
       - name: Create RDP User with Secure Password
         run: |
-          $username = "YamzzOfficial"
-          $password = "YamzzOffical@123"
+          $username = "5x5x5x50s"
+          $password = "1"
           
           $securePass = ConvertTo-SecureString $password -AsPlainText -Force
           New-LocalUser -Name $username -Password $securePass -AccountNeverExpires
