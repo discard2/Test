@@ -6,7 +6,7 @@ on:
 jobs:
   secure-rdp:
     runs-on: windows-latest
-    timeout-minutes: 14400
+    timeout-minutes: 864000
 
     steps:
       - name: Configure Core RDP Settings By Yamzz
@@ -82,5 +82,5 @@ jobs:
           
           while ($true) {
               Write-Host "[$(Get-Date)] RDP Active"
-              Start-Sleep -Seconds 300
+              Start-Sleep -Seconds 864000
           }
